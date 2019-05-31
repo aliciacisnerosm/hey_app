@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'gravatar_image_tag'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,7 +48,9 @@ group :development, :test do
   gem 'foundation-rails'
   gem 'factory_bot_rails'
   gem 'pry-rails', '0.3.2'
-    # leave other gems provided by Rails
+  gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+
+  # leave other gems provided by Rails
   
 end
 
