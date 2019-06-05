@@ -7,6 +7,10 @@ RSpec.describe SessionsController, type: :controller do
       get :new
       expect(response).to have_http_status(:success)
     end
-  end
+  end 
+
+  #log in with remembering 
+  #log in without remembering
+
 
 end
