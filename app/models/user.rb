@@ -68,6 +68,7 @@ class User < ApplicationRecord
       UserMailer.password_reset(self).deliver_now
     end
 
+    
     def activate
       update_attribute(:activated,    true)
       update_attribute(:activated_at, Time.zone.now)
