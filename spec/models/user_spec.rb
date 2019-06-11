@@ -4,8 +4,8 @@ RSpec.describe User, type: :model do
 
   it { should validate_presence_of(:name) } 
   it { should validate_presence_of(:email)}
-  
-  it {is_expected.to validate_length_of(:name).is_at_least(2).on(:create)}
+ # it {should have_many(:microposts).order('created_at desc')}
+ # it {is_expected.to validate_length_of(:name).is_at_least(2).on(:create)}
 
   it "is valid with email as lower-case" do
     user2 = build(:user, email: "OLA")
