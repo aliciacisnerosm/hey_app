@@ -6,5 +6,14 @@ FactoryBot.define do
     email {Faker::Internet.email}
     password_digest {Faker::Internet.password}
   end
+end
 
-end   
+
+FactoryBot.define do 
+  factory :micropost do
+    id {Faker::IDNumber.south_african_id_number}
+    content {Faker::Lorem.sentence}
+    user_id {Faker::IDNumber.valid}
+  end
+end
+
